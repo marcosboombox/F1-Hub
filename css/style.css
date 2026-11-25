@@ -1,0 +1,1067 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Rajdhani:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, .logo {
+    font-family: 'Rajdhani', sans-serif;
+}
+/* Configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #10131c;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+/* CABEÇALHO */
+
+.header {
+    width: 100%;
+    padding: 20px 40px;
+    background-color: #151922;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* LOGO */
+
+.logo {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #e10600;
+}
+
+/* MENU */
+
+.menu ul {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    list-style: none;
+}
+
+.menu a {
+    color: #b8b8b8;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.menu a:hover,
+.menu a.active {
+    color: #e10600;
+}
+/* BANNER PRINCIPAL */
+
+.banner {
+    width: 100%;
+    min-height: 350px;
+
+    background-image:
+        linear-gradient(
+            to right,
+            rgba(10, 12, 18, 0.95),
+            rgba(10, 12, 18, 0.2)
+        ),
+        url("../assets/images/banner-f1.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+
+    padding: 40px;
+    border-radius: 10px;
+}
+
+/* CONTEÚDO DO BANNER */
+
+.banner-content {
+    max-width: 450px;
+}
+
+.banner-subtitle {
+    color: #e10600;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.banner h1 {
+    font-size: 38px;
+    font-weight: 300;
+    margin: 10px 0;
+}
+
+.banner h1 span {
+    color: #e10600;
+}
+
+.banner p {
+    color: #cccccc;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* BOTÃO */
+
+.banner-button {
+    display: inline-block;
+    background-color: #e10600;
+    color: white;
+
+    padding: 14px 25px;
+    border-radius: 10px;
+
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.banner-button:hover {
+    background-color: #a80000;
+    transform: scale(1.05);
+}
+@media (max-width: 768px) {
+
+    .header {
+        padding: 20px;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .banner {
+        min-height: 300px;
+        padding: 25px;
+    }
+
+    .banner h1 {
+        font-size: 30px;
+    }
+}
+
+
+/* DASHBOARD */
+
+.dashboard {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 15px;
+    margin-top: 18px;
+}
+
+/* PRÓXIMA CORRIDA */
+
+.race-card {
+    background-color: #252b38;
+    padding: 20px;
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.race-card h2,
+.news-title h2 {
+    color: #e10600;
+    font-size: 19px;
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+
+.race-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.race-info h3,
+.race-info p {
+    color: #d0d0d0;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 6px;
+}
+
+.race-icon {
+    font-size: 30px;
+    color: #e10600;
+    text-align: center;
+}
+
+.race-icon small {
+    display: block;
+    font-size: 9px;
+    color: #aaa;
+}
+
+.card-link {
+    display: inline-block;
+    color: #e10600;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.card-link:hover {
+    color: #ffffff;
+}
+
+/* ÚLTIMAS NOTÍCIAS */
+
+.news-card {
+    background-color: #252b38;
+    border: none;
+    border-radius: 12px;
+
+    padding: 18px;
+
+    display: grid;
+    grid-template-columns: 0.8fr 2fr;
+    gap: 20px;
+}
+
+.news-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.news-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.news-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #555;
+}
+
+.news-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.news-item img {
+    width: 115px;
+    height: 65px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.news-item h3 {
+    color: #ddd;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.news-item p {
+    color: #aaa;
+    font-size: 13px;
+}
+@media (max-width: 768px) {
+
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    .news-card {
+        grid-template-columns: 1fr;
+    }
+
+    .news-title {
+        gap: 10px;
+    }
+
+    .news-item img {
+        width: 100px;
+        height: 65px;
+    }
+
+}
+/* CLASSIFICAÇÃO GERAL */
+
+.standings {
+    margin-top: 20px;
+    padding: 10px 0;
+}
+
+.standings h2 {
+    color: #e10600;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 18px;
+}
+
+.drivers-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.driver {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.driver img {
+    width: 95px;
+    height: 95px;
+    min-width: 95px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #252b38;
+}
+
+.driver-info h3 {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.driver-info p {
+    color: #b8b8b8;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+/* LIMITAR LARGURA DO CONTEÚDO */
+.dashboard,
+.standings {
+    width: 90%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* CENTRALIZAR CONTEÚDO DO BANNER */
+.banner-content {
+    width: 90%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* CONTAINER DO CABEÇALHO */
+.container {
+    width: 90%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* CORRIGIR CORES DOS LINKS */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
+a:hover {
+    color: #ff1e00;
+}
+
+@media (max-width: 768px) {
+
+    .drivers-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .driver img {
+        width: 75px;
+        height: 75px;
+        min-width: 75px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .drivers-list {
+        grid-template-columns: 1fr;
+    }
+
+}
+/*------------------pilotos.hml--------------------------------------*/
+.pilotos-page {
+    padding: 40px;
+    min-height: 100vh;
+}
+
+/* INTRODUÇÃO */
+
+.pilotos-intro {
+    margin-bottom: 40px;
+}
+
+.pilotos-intro span {
+    color: #e10600;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.pilotos-intro h1 {
+    color: #ffffff;
+    font-size: 36px;
+    margin: 12px 0;
+}
+
+.pilotos-intro p {
+    color: #b8b8b8;
+    font-size: 15px;
+}
+
+/* SEÇÃO DOS PILOTOS */
+
+.pilotos-section h2 {
+    color: #ffffff;
+    font-size: 23px;
+    margin-bottom: 25px;
+}
+
+/* GRID */
+
+.pilotos-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+/* CARTÃO DO PILOTO */
+
+.piloto-card {
+    background-color: #252b38;
+    border-radius: 12px;
+    overflow: hidden;
+    max-width: 100%;
+    transition: transform 0.3s;
+}
+
+.piloto-card:hover {
+    transform: translateY(-6px);
+}
+
+.piloto-card img {
+    width: 100%;
+    height: 150px;
+
+    object-fit: contain;
+    object-position: center;
+
+    background-color: #303746;
+}
+
+.piloto-info {
+    padding: 14px;
+}
+
+.piloto-equipe {
+    color: #e10600;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.piloto-info h3 {
+    color: #ffffff;
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+.piloto-info p {
+    color: #b8b8b8;
+    font-size: 12px;
+}
+@media (max-width: 900px) {
+
+    .pilotos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .pilotos-page {
+        padding: 20px;
+    }
+
+    .pilotos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pilotos-intro h1 {
+        font-size: 28px;
+    }
+
+}
+
+/*-------------classificação---------------------*/
+.classificacao-page {
+    padding: 50px 8%;
+    background-color: #151a24;
+    min-height: 100vh;
+}
+
+.classificacao-intro {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.classificacao-intro h1 {
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+.classificacao-intro p {
+    color: #b0b7c3;
+    font-size: 16px;
+}
+
+.classificacao-section {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.classificacao-section + .classificacao-section {
+    margin-top: 45px;
+}
+
+.classificacao-section h2 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 20px;
+    border-left: 4px solid #e10600;
+    padding-left: 12px;
+}
+
+.tabela-container {
+    width: 100%;
+    overflow-x: auto;
+    background-color: #202735;
+    border-radius: 10px;
+}
+
+.tabela-classificacao {
+    width: 100%;
+    border-collapse: collapse;
+    color: #ffffff;
+}
+
+.tabela-classificacao th {
+    background-color: #303a4b;
+    color: #ffffff;
+    padding: 18px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.tabela-classificacao td {
+    padding: 16px 18px;
+    border-bottom: 1px solid #343e4e;
+    font-size: 14px;
+}
+
+.tabela-classificacao tbody tr:hover {
+    background-color: #2b3545;
+}
+
+.tabela-classificacao th:first-child,
+.tabela-classificacao td:first-child {
+    width: 70px;
+    text-align: center;
+}
+
+.tabela-classificacao th:last-child,
+.tabela-classificacao td:last-child {
+    text-align: center;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .classificacao-page {
+        padding: 35px 5%;
+    }
+
+    .classificacao-intro h1 {
+        font-size: 28px;
+    }
+
+    .classificacao-section h2 {
+        font-size: 20px;
+    }
+}
+
+/* DESTAQUE DOS CAMPEÕES */
+.campeoes {
+    max-width: 1100px;
+    margin: 0 auto 50px;
+}
+
+.campeoes h2 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.campeoes-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.campeao-card {
+    position: relative;
+    background: linear-gradient(135deg, #303a4b, #202735);
+    border: 1px solid #465267;
+    border-left: 4px solid #e10600;
+    border-radius: 10px;
+    padding: 25px;
+    overflow: hidden;
+}
+
+.campeao-tipo {
+    color: #e10600;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.campeao-card h3 {
+    color: #ffffff;
+    font-size: 26px;
+    margin: 14px 0 5px;
+}
+
+.campeao-card p {
+    color: #b0b7c3;
+    font-size: 15px;
+}
+
+.campeao-trofeu {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    font-size: 38px;
+}
+
+@media (max-width: 600px) {
+    .campeoes-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.campeao-card {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.campeao-imagem {
+    width: 105px;
+    height: 120px;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 8px;
+}
+
+.campeao-imagem.logo-mercedes {
+    object-fit: contain;
+    background-color: #ffffff;
+    padding: 10px;
+    height: 90px;
+}
+
+.campeao-conteudo {
+    flex: 1;
+}
+
+.campeao-conteudo h3 {
+    margin: 10px 0 5px;
+}
+
+.campeao-trofeu {
+    position: static;
+    font-size: 32px;
+}
+
+@media (max-width: 600px) {
+    .campeao-card {
+        gap: 10px;
+        padding: 15px;
+    }
+
+    .campeao-imagem {
+        width: 75px;
+        height: 95px;
+    }
+}
+/* DESTAQUE DO PÓDIO */
+
+.primeiro-lugar td:first-child {
+    color: #ffd700;
+    font-weight: bold;
+}
+
+.segundo-lugar td:first-child {
+    color: #c0c0c0;
+    font-weight: bold;
+}
+
+.terceiro-lugar td:first-child {
+    color: #cd7f32;
+    font-weight: bold;
+}
+
+.primeiro-lugar {
+    background-color: rgba(255, 215, 0, 0.07);
+}
+
+.segundo-lugar {
+    background-color: rgba(192, 192, 192, 0.06);
+}
+
+.terceiro-lugar {
+    background-color: rgba(205, 127, 50, 0.06);
+}
+
+/* PESQUISA DE PILOTOS */
+
+.pesquisa-pilotos {
+    margin-bottom: 20px;
+}
+
+.pesquisa-pilotos input {
+    width: 100%;
+    max-width: 400px;
+    padding: 13px 16px;
+
+    background-color: #202735;
+    border: 1px solid #465267;
+    border-radius: 7px;
+
+    color: #ffffff;
+    font-size: 14px;
+    outline: none;
+}
+
+.pesquisa-pilotos input:focus {
+    border-color: #e10600;
+}
+
+.pesquisa-pilotos input::placeholder {
+    color: #929baa;
+}
+
+/*--------------------calendario-----------------------*/
+
+.calendario-page {
+    padding: 50px 8%;
+    background-color: #151a24;
+    min-height: 100vh;
+}
+
+.calendario-intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.calendario-intro h1 {
+    color: #ffffff;
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.calendario-intro p {
+    color: #b0b7c3;
+}
+
+.proxima-corrida {
+    max-width: 1100px;
+    margin: 0 auto 45px;
+    padding: 25px;
+    background: linear-gradient(135deg, #303a4b, #202735);
+    border-left: 4px solid #e10600;
+    border-radius: 10px;
+}
+
+.corrida-status {
+    color: #ff3333;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.proxima-corrida h2 {
+    color: #ffffff;
+    margin: 12px 0;
+}
+
+.proxima-corrida p,
+.corrida-circuito {
+    color: #b0b7c3;
+}
+
+.calendario-section {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.calendario-section h2 {
+    color: #ffffff;
+    border-left: 4px solid #e10600;
+    padding-left: 12px;
+    margin-bottom: 20px;
+}
+
+.corridas-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.corrida-card {
+    position: relative;
+    background-color: #202735;
+    border: 1px solid #343e4e;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.corrida-numero {
+    color: #e10600;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.corrida-card h3 {
+    color: #ffffff;
+    margin: 15px 0 8px;
+}
+
+.corrida-card p,
+.corrida-card > span:not(.corrida-numero):not(.corrida-finalizada) {
+    color: #b0b7c3;
+    font-size: 13px;
+}
+
+.corrida-finalizada {
+    display: block;
+    margin-top: 18px;
+    color: #7bd88f;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+@media (max-width: 900px) {
+    .corridas-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .calendario-page {
+        padding: 35px 5%;
+    }
+
+    .calendario-intro h1 {
+        font-size: 28px;
+    }
+
+    .corridas-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* STATUS DAS CORRIDAS */
+
+.corrida-finalizada {
+    color: #7bd88f;
+}
+
+.corrida-proxima {
+    display: block;
+    margin-top: 18px;
+    color: #ff4545;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.corrida-agendada {
+    display: block;
+    margin-top: 18px;
+    color: #aeb6c2;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* DESTAQUE DA PRÓXIMA CORRIDA */
+
+.corrida-destaque {
+    border: 1px solid #e10600;
+    background: linear-gradient(135deg, #303a4b, #252b38);
+}
+
+.corrida-destaque .corrida-numero {
+    color: #ff4545;
+}
+/*--------------------noticias-----------------------*/
+/* PÁGINA DE NOTÍCIAS - MANUTENÇÃO */
+
+.noticias-page {
+    min-height: 75vh;
+    padding: 60px 8%;
+    background-color: #151a24;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.noticias-manutencao {
+    width: 100%;
+    max-width: 850px;
+    padding: 55px 35px;
+
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        #252d3b,
+        #1c222e
+    );
+
+    border: 1px solid #343e4e;
+    border-top: 5px solid #e10600;
+    border-radius: 12px;
+}
+
+.bandeira-vermelha {
+    font-size: 75px;
+    margin-bottom: 15px;
+}
+
+.noticias-status {
+    color: #e10600;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.noticias-manutencao h1 {
+    color: #ffffff;
+    font-size: 42px;
+    margin: 18px 0;
+}
+
+.noticias-manutencao h1 span {
+    color: #e10600;
+}
+
+.noticias-manutencao h2 {
+    color: #ffffff;
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+
+.noticias-manutencao p {
+    color: #b0b7c3;
+    font-size: 15px;
+    line-height: 1.7;
+    max-width: 600px;
+    margin: 10px auto;
+}
+
+.linha-manutencao {
+    width: 70px;
+    height: 3px;
+    background-color: #e10600;
+    margin: 30px auto;
+}
+
+.noticias-em-breve {
+    display: block;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+.noticias-button {
+    display: inline-block;
+    background-color: #e10600;
+    color: #ffffff;
+    text-decoration: none;
+
+    padding: 13px 25px;
+    border-radius: 5px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.noticias-button:hover {
+    background-color: #b80500;
+    transform: translateY(-3px);
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 600px) {
+
+    .noticias-page {
+        padding: 35px 5%;
+    }
+
+    .noticias-manutencao {
+        padding: 40px 20px;
+    }
+
+    .noticias-manutencao h1 {
+        font-size: 30px;
+    }
+
+    .noticias-manutencao h2 {
+        font-size: 18px;
+    }
+
+    .bandeira-vermelha {
+        font-size: 60px;
+    }
+
+}
