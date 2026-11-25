@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 Hub | Classificação</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- CABEÇALHO -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span>F1</span> Hub
+            </a>
+            <nav class="menu">
+                <ul>
+                    <li> <a href="index.html">Início</a></li>
+                    <li><a href="pilotos.html">Pilotos</a></li>
+                    <li><a href="classificacao.html">Classificação</a></li>
+                    <li><a href="calendario.html">Calendário</a></li>
+                    <li><a href="noticias.html">Notícias</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="classificacao-page">
+        <section class="classificacao-intro">
+            <section class="campeoes">
+                <h2>🏆 Campeões da temporada 2026</h2>
+                <div class="campeoes-grid">
+                    <div class="campeao-card">
+                        <img src="assets/images/Antonelli.png" alt="Kimi Antonelli" class="campeao-imagem">
+                        <div class="campeao-conteudo">
+                            <span class="campeao-tipo">
+                                CAMPEÃO MUNDIAL DE PILOTOS
+                            </span>
+                            <h3>Kimi Antonelli</h3>
+                            <p>Mercedes</p>
+                        </div>
+                        <span class="campeao-trofeu">🏆</span>
+                    </div>
+                    <div class="campeao-card">
+                        <img src="assets/images/mercedes.png" alt="Logo da Mercedes"
+                            class="campeao-imagem logo-mercedes">
+                        <div class="campeao-conteudo">
+                            <span class="campeao-tipo">
+                                CAMPEÃ MUNDIAL DE CONSTRUTORES
+                            </span>
+                            <h3>Mercedes</h3>
+                            <p>Temporada 2026</p>
+                        </div>
+                        <span class="campeao-trofeu">🏆</span>
+                    </div>
+                </div>
+            </section>
+            <h1>Classificação da Fórmula 1</h1>
+            <p>Acompanhe a pontuação dos pilotos e das equipes.</p>
+        </section>
+
+        <section class="classificacao-section">
+            <h2>Campeonato de Pilotos</h2>
+            <div class="pesquisa-pilotos">
+                <input type="text" id="buscarPiloto" placeholder="Pesquisar piloto...">
+            </div>
+            <div class="tabela-container">
+                <table class="tabela-classificacao tabela-pilotos">
+                    <thead>
+                        <tr>
+                            <th>Pos.</th>
+                            <th>Piloto</th>
+                            <th>Equipe</th>
+                            <th>Pontos</th>
+                        </tr>
+                    </thead>
+                        <!-- Os pilotos serão adicionados aqui -->
+                    <tbody>
+                        <tr class="primeiro-lugar">
+                            <td>1</td>
+                            <td>Kimi Antonelli</td>
+                            <td>Mercedes</td>
+                            <td>402</td>
+                        </tr>
+
+                        <tr class="segundo-lugar">
+                            <td>2</td>
+                            <td>Max Verstappen</td>
+                            <td>Red Bull</td>
+                            <td>304</td>
+                        </tr>
+
+                        <tr class="terceiro-lugar">
+                            <td>3</td>
+                            <td>Lewis Hamilton</td>
+                            <td>Ferrari</td>
+                            <td>267</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>George Russell</td>
+                            <td>Mercedes</td>
+                            <td>264</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Lando Norris</td>
+                            <td>McLaren</td>
+                            <td>264</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Charles Leclerc</td>
+                            <td>Ferrari</td>
+                            <td>250</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Oscar Piastri</td>
+                            <td>McLaren</td>
+                            <td>167</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Isack Hadjar</td>
+                            <td>Red Bull</td>
+                            <td>122</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Liam Lawson</td>
+                            <td>Racing Bulls</td>
+                            <td>89</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Pierre Gasly</td>
+                            <td>Alpine</td>
+                            <td>52</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>Arvid Lindblad</td>
+                            <td>Racing Bulls</td>
+                            <td>38</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>Franco Colapinto</td>
+                            <td>Alpine</td>
+                            <td>35</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>Oliver Bearman</td>
+                            <td>Haas</td>
+                            <td>23</td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>Gabriel Bortoleto</td>
+                            <td>Audi</td>
+                            <td>14</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>Nico Hulkenberg</td>
+                            <td>Audi</td>
+                            <td>14</td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>Carlos Sainz</td>
+                            <td>Williams</td>
+                            <td>11</td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>Esteban Ocon</td>
+                            <td>Haas</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>Fernando Alonso</td>
+                            <td>Aston Martin</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>Alexander Albon</td>
+                            <td>Williams</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>Yuki Tsunoda</td>
+                            <td>Racing Bulls</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>Ryo Hirakawa</td>
+                            <td>Haas</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td>Lance Stroll</td>
+                            <td>Aston Martin</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>23</td>
+                            <td>Valtteri Bottas</td>
+                            <td>Cadillac</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>24</td>
+                            <td>Sergio Perez</td>
+                            <td>Cadillac</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>25</td>
+                            <td>Rafael Câmara</td>
+                            <td>Haas</td>
+                            <td>0</td>
+                        </tr>
+                    </tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="classificacao-section">
+
+            <h2>Campeonato Mundial de Construtores — 2026</h2>
+
+            <div class="tabela-container">
+                <table class="tabela-classificacao">
+                    <thead>
+                        <tr>
+                            <th>Pos.</th>
+                            <th>Equipe</th>
+                            <th>Pontos</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr class="primeiro-lugar">
+                            <td>1</td>
+                            <td>Mercedes</td>
+                            <td>666</td>
+                        </tr>
+
+                        <tr class="segundo-lugar">
+                            <td>2</td>
+                            <td>Ferrari</td>
+                            <td>517</td>
+                        </tr>
+
+                        <tr class="terceiro-lugar">
+                            <td>3</td>
+                            <td>Red Bull Racing</td>
+                            <td>440</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>McLaren</td>
+                            <td>431</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Racing Bulls</td>
+                            <td>114</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Alpine</td>
+                            <td>87</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Haas</td>
+                            <td>31</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Audi</td>
+                            <td>28</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Williams</td>
+                            <td>16</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Aston Martin</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>Cadillac</td>
+                            <td>0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
