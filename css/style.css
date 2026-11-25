@@ -1066,3 +1066,27 @@ a:hover {
     }
 
 }
+
+/* Transição de entrada das páginas */
+@keyframes entradaPagina {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body {
+    animation: entradaPagina 0.5s ease-out;
+}
+
+/* Respeita usuários que preferem menos animações */
+@media (prefers-reduced-motion: reduce) {
+    body {
+        animation: none;
+    }
+}
